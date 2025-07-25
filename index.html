@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Ali Haider | Portfolio</title>
+    <style>
+        @keyframes zoomIn {
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <a href="codebyali.me" class="web_logo">codebyali.me</a>
+        <nav class="nav_menu">
+            <i class='bx bx-menu' id="toggle_icon"></i>
+            <ul class="menu_list">
+                <li class="nav_item"><a href="#" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
+                <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                <!-- <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li> -->
+                <li class="nav_item"><a href="#contacts" class="nav_link">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="header_main_section">
+        <div class="header_container">
+            <div class="image_box">
+                <img style="width: fit-content;transform: scale(0.8);
+ opacity: 0;
+    animation: zoomIn 1s ease-out forwards;" src="assets/www.jpg" alt="Ali Haider">
+            </div>
+            <div class="content_box">
+                <h1>Ali Haider</h1>
+                <h2 class="typing-text"></h2> <!-- Typewriter effect here -->
+                <p>I’m a frontend-focused MERN stack developer passionate about building fast, responsive, and
+                    user-friendly web applications. I bring designs to life with clean code and modern tech.</p>
+                <button type="button"
+                    onclick="document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });">
+                    Contact Me
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services_section" id="services">
+        <!-- <div class="section_title_component">
+            <span>Services</span>
+            <h2>What I Offer</h2>
+            <p>I provide end-to-end creative and digital solutions tailored to your needs.</p>
+        </div> -->
+
+        <section class="projects_section" id="projects">
+            <div class="section_title_component">
+                <span>Projects</span>
+                <h2>Web Development Projects</h2>
+                <p>Here are some recent projects I've built using the MERN stack and modern frontend technologies.</p>
+            </div>
+
+            <div class="services_box">
+                <div class="services_item_card">
+                    <i class='bx bx-code-curly'></i>
+                    <h3>Portfolio Website (React.js)</h3>
+                    <p>A fully responsive personal portfolio built with React.js showcasing my skills, projects, and
+                        contact form.</p>
+                </div>
+
+                <div class="services_item_card">
+                    <i class='bx bxs-server'></i>
+                    <h3>Task Manager App (MERN Stack)</h3>
+                    <p>A full-stack task management app with user authentication, MongoDB backend, Express API, React
+                        frontend, and Node.js server.</p>
+                </div>
+
+                <div class="services_item_card">
+                    <i class='bx bx-shopping-bag'></i>
+                    <h3>E-commerce Site (React + Firebase)</h3>
+                    <p>An online store with product filtering, cart functionality, and real-time database using Firebase
+                        for backend services.</p>
+                </div>
+
+                <div class="services_item_card">
+                    <i class='bx bx-lock'></i>
+                    <h3>Authentication System</h3>
+                    <p>Secure login and signup system built using React.js, JWT tokens, Node.js, and Express. Includes
+                        role-based access.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about_section" id="about">
+            <div class="section_title_comment">
+                <span>About Me</span>
+                <h2>Who I Am</h2>
+                <p style="font-size: large;">Building fast, responsive web apps with the MERN stack.</p>
+            </div>
+
+            <div class="about_main_box">
+                <div class="image_box">
+                    <img src="assets/aboutme.png" alt="Ali Haider">
+                </div>
+
+                <div class="information_box">
+                    <h3>Hi, I'm Ali</h3>
+                    <p>I’m a self-driven web developer based in Shahkot, Pakistan, with a strong passion for clean code
+                        and user-centered design. I specialize in the MERN stack (MongoDB, Express.js, React.js,
+                        Node.js) and modern frontend technologies.</p>
+
+                    <p>My goal is to help startups and businesses grow online through optimized websites, scalable web
+                        apps, and great UI experiences. I’m always learning and improving to stay up-to-date with the
+                        latest trends in full-stack web development.</p>
+
+                    <div class="info_items_box">
+                        <div class="info_item">
+                            <span>Name:</span>
+                            <p>Ali Haider</p>
+                        </div>
+                        <div class="info_item">
+                            <span>GitHub:</span>
+                            <p><a href="https://github.com/alihaideroffical1" target="_blank">alihaideroffical1</a></p>
+                        </div>
+                        <div class="info_item">
+                            <span>Phone:</span>
+                            <p>0346 5131427</p>
+                        </div>
+                        <div class="info_item">
+                            <span>LinkedIn:</span>
+                            <p><a href="https://www.linkedin.com/in/alihaideroffical"
+                                    target="_blank">alihaideroffical</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section class="contact_section" id="contacts" style="padding: 60px 20px; background-color: #0f0f0f; color: #f1f1f1;">
+  <div class="section_title_comment" style="text-align: center; margin-bottom: 40px;">
+    <span style="color: #ff4d4d; font-weight: bold;">Let's Connect</span>
+    <h2 style="font-size: 36px; margin: 10px 0;">Get in Touch</h2>
+    <p style="max-width: 600px; margin: 0 auto; font-size: 16px; color: #ccc;">
+      Whether it's a project, a question, or a collaboration — I'm just a message away.
+    </p>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+
+    <!-- Address Card -->
+    <div class="contact_card" style="flex: 1 1 300px; background: #1a1a1a; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,77,77,0.2);">
+      <i class='bx bxs-map' style="font-size: 30px; color: #ff4d4d;"></i>
+      <h3 style="margin: 10px 0;">Address</h3>
+      <p style="color: #bbb;">College Road, Shahkot, Pakistan</p>
+      <button onclick="toggleVisibility('mapContainer')" style="margin-top: 10px; background: #ff4d4d; color: #fff; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">
+        Show Map
+      </button>
+      <div id="mapContainer" style="margin-top: 15px; display: none; border-radius: 10px; overflow: hidden;">
+        <iframe
+          src="https://www.google.com/maps?q=College+Road+Shahkot+Pakistan&output=embed"
+          width="100%" height="200" frameborder="0" style="border:0;"
+          allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Phone Card -->
+    <div class="contact_card" style="flex: 1 1 300px; background: #1a1a1a; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,77,77,0.2);">
+      <i class='bx bx-phone' style="font-size: 30px; color: #ff4d4d;"></i>
+      <h3 style="margin: 10px 0;">Phone</h3>
+      <p style="color: #bbb;">+92 346 5131427</p>
+      <button onclick="window.location.href='tel:+923465131427'" style="margin-top: 10px; background: #ff4d4d; color: #fff; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">
+        Call Now
+      </button>
+    </div>
+
+    <!-- Email Card -->
+    <div class="contact_card" style="flex: 1 1 300px; background: #1a1a1a; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,77,77,0.2);">
+      <i class='bx bxs-envelope' style="font-size: 30px; color: #ff4d4d;"></i>
+      <h3 style="margin: 10px 0;">Email</h3>
+      <p style="color: #bbb;">alihaideroffical344@gmail.com</p>
+      <button onclick="window.location.href='mailto:alihaideroffical344@gmail.com?subject=Let’s Work Together'" style="margin-top: 10px; background: #ff4d4d; color: #fff; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">
+        Send Email
+      </button>
+    </div>
+
+  </div>
+</section>
+<script>
+  function toggleVisibility(id) {
+    const el = document.getElementById(id);
+    el.style.display = el.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+
+
+        <footer>
+            <h2>Ali Haider | Code & Creativity</h2>
+            <p>I build digital experiences with purpose and passion — from responsive websites to compelling content and
+                smart applications.</p>
+            <p class="copyright">
+                &copy; 2025 <span>codebyali.me</span>. All rights reserved.
+            </p>
+        </footer>
+
+        <a href="#" class="to_top">
+            <i class='bx bx-chevrons-up'></i>
+        </a>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
